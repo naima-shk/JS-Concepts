@@ -11,3 +11,13 @@ console.log(typeof s1);
 const s2= new string ('hi');
 console.log(typeof s2);
 //it will return object 
+
+//object Literals
+const Book1={
+    title:'My book',
+    author:'John doe',
+    year: '2013',
+    getSummary: function(){
+        return `${this.title} was written by  ${this.author} in ${this.year}`;
+    }
+};
