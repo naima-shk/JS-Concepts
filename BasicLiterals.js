@@ -34,4 +34,6 @@ const Book2={
 //console.log(Book2.getSummary());
 //console.log(Object.values(Book2));
 //console.log(Object.keys(Book2));
-
+{/*
+    By avoiding to create a same function twice we have to create constructor  
+*/}
