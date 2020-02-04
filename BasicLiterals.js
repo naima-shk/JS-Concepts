@@ -1,3 +1,5 @@
+import { object } from "prop-types";
+
 const s= 'Hello';
 console.log(s.toUpperCase());
 {/* i can take 's' as a string and used 'to uppercase' javascript method 
@@ -21,3 +23,16 @@ const Book1={
         return `${this.title} was written by  ${this.author} in ${this.year}`;
     }
 };
+const Book2={
+    title:'My book',
+    author:'John doe',
+    year: '2016',
+    getSummary: function(){
+        return `${this.title} was written by  ${this.author} in ${this.year}`;
+    }
+};
+
+console.log(Book2.getSummary());
+console.log(object.values(Book2));
+console.log(object.keys(Book2));
+
