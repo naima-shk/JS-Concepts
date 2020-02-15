@@ -55,3 +55,33 @@ console.log(gradeCalculator(84)); //=> "B"
 console.log(gradeCalculator(70)); //=> "C"
 console.log(gradeCalculator(61)); //=> "D"
 console.log(gradeCalculator(43)); //=> "F"
+
+{
+  /* 
+  Write a function disemvowel that takes in a string and returns a new string with all vowels removed.
+*/
+}
+function disemvowel(string) {
+  let vowels = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true
+  };
+
+  let result = "";
+
+  for (let i = 0; i < string.length; i++) {
+    let letter = string[i].toLowerCase();
+    if (!vowels[letter]) {
+      result += string[i];
+    }
+  }
+  return result;
+}
+//Comment in the code below to test your function:
+
+console.log(disemvowel("CodeSmith")); // => 'CdSmth'
+console.log(disemvowel("BANANA")); // => 'BNN'
+console.log(disemvowel("hello world")); // => 'hll wrld'
