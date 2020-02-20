@@ -31,3 +31,26 @@ console.log(test2);
 }
 
 //END  OF QUESTION 1//
+
+//QUESTION #2
+
+{
+  /* 
+ 2) What are the differences between == and ===?
+ Answer: == is used for comparison between two variables irrespective of the datatype of variable.
+=== is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.
+*/
+}
+
+//QUESTION #3
+
+{
+  /* 
+ 3) How would you compare two objects in JavaScript?
+ANSWER: Works when you have simple JSON-style objects without methods and DOM nodes inside:
+ JSON.stringify(obj1) === JSON.stringify(obj2)
+ 
+
+
+*/
+}
