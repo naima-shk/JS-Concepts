@@ -67,3 +67,36 @@ Now you are comparing "" == 1 and still left and right is not same type. Hence l
 Finally, they are of same type, you are comparing 0 === 1 which will be false.
  */
 }
+
+//QUESTION 5
+{
+  /*
+ 5) How could you write a method on instance of a date which will give you next day?
+      var myDate = new Date('Febrauary 20, 2020 07:30:00');
+     myDate.nextDay = function(){
+  var day = this.getDate();
+  return day + 1;
+};
+myDate.nextDayName = function (){
+  var day = this.getDay();
+  day++;
+  
+  switch (day){
+    case 0:
+      return 'Sunday';
+    case 1:
+      return 'Monday';
+    case 2:
+      return 'Tuesday';
+    case 3:
+      return 'Wednesday';
+    case 4:
+      return 'Thursday';
+    case 5:
+      return 'Friday';
+    case 6:
+      return 'Saturday';
+  }
+};
+ */
+}
