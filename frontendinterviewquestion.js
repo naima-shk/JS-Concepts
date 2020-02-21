@@ -100,3 +100,10 @@ myDate.nextDayName = function (){
 };
  */
 }
+
+//QUESTION 6
+{
+  /*
+  6)  If you want to use an arbitrary object as value of this, how will you do that?
+  */
+}
