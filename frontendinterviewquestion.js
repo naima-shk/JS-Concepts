@@ -134,3 +134,11 @@ myDate.nextDayName = function (){
   let array = [100, 0, 50];
   array.max();
 }
+
+//QUESTION 9
+{
+  /*
+  9)What the heck is this in JavaScript?
+  https://medium.com/@ma7moudfelfel/what-the-heck-is-this-understanding-this-in-javascript-b9021a2f11c
+ */
+}
