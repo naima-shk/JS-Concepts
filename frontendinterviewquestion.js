@@ -125,3 +125,12 @@ myDate.nextDayName = function (){
   }
   document.getElementById("demo").innerHTML = myFunction(2);
 }
+
+//QUESTION 8
+{
+  /*
+ 8) How could you use Math.max to find the max value in an array?
+ */
+  let array = [100, 0, 50];
+  array.max();
+}
