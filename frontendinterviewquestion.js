@@ -105,33 +105,10 @@ myDate.nextDayName = function (){
 {
   /*
   6)  If you want to use an arbitrary object as value of this, how will you do that?
-  */
-  function addAll() {
-    // What do we do here?
-  }
+ 
 
-  // Should return 6
-  addAll(1, 2, 3);
-
-  // Should return 10
-  addAll(1, 2, 3, 4);
-  //Fortunately, JavaScript does have an answer, though it is a little quirky. The answer is the arguments object.
-  //Now that we know about arguments, it is easy to make an addition function that will operate on any number of parameters.
-  function addAll() {
-    var sum = 0;
-
-    for (var i = 0; i < arguments.length; i++) {
-      sum = sum + arguments[i];
-    }
-
-    return sum;
-  }
-
-  // Returns 6
-  addAll(1, 2, 3);
-
-  // Returns 10
-  addAll(1, 2, 3, 4);
-  //http://adripofjavascript.com/blog/drips/arbitrary-parameters-with-the-arguments-object.html
-  //THis link provides complete detail of the given query.
+ http://adripofjavascript.com/blog/drips/arbitrary-parameters-with-the-arguments-object.html
+  http://www.thatjsdude.com/interview/js2.html#bindthis
+  THis link provides complete detail of the given query.
+*/
 }
