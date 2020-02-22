@@ -142,3 +142,10 @@ myDate.nextDayName = function (){
   https://medium.com/@ma7moudfelfel/what-the-heck-is-this-understanding-this-in-javascript-b9021a2f11c
  */
 }
+
+//QUESTION 10
+{
+  /* 
+10)21 quick questions that will trick you.
+*/
+}
