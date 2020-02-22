@@ -112,3 +112,16 @@ myDate.nextDayName = function (){
   THis link provides complete detail of the given query.
 */
 }
+
+//QUESTION 7
+{
+  /*
+  7)Write a simple function to tell whether 2 is passed as parameter or not?
+  */
+  function myFunction(x) {
+    if (x == 2) {
+      return x;
+    }
+  }
+  document.getElementById("demo").innerHTML = myFunction(2);
+}
