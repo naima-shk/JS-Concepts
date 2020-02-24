@@ -164,3 +164,25 @@ myDate.nextDayName = function (){
   log("my message", "your message"); //(app) my message your message
   //Just get the arguments, convert it to an array and unshift whatever prefix you want to set. Finally, use apply to pass all the arguments to console.
 }
+
+//QUESTION 12
+{
+  /*
+  12)What will you see in the console for the following example
+ */
+  var a = 1;
+  function b() {
+    a = 10;
+    return;
+    function a() {}
+  }
+  b();
+  console.log(a);
+  {
+    /*Explanation:
+function declaration function a(){} is hoisted first and it behaves like var a = function () {};. Hence in local scope variable a is created.
+If you have two variables with same name (one in global another in local), local variable always get precedence over global variable.
+When you set a = 10;, you are setting the local variable a , not the global one. Hence, the value of global variable remain same and you get, 1 in the log. ref: js hoisting/scope
+Extra: If you didnt have a function named as "a", you will see 10 in the log. */
+  }
+}
