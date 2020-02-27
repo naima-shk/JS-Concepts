@@ -85,3 +85,26 @@ function disemvowel(string) {
 console.log(disemvowel("CodeSmith")); // => 'CdSmth'
 console.log(disemvowel("BANANA")); // => 'BNN'
 console.log(disemvowel("hello world")); // => 'hll wrld'
+
+{
+  /* Write a function arrayBuilder that takes in a count object and returns an array filled with the appropriate numbers of elements. The order of the elements in the array does not matter, but repeated elements should be grouped.
+   */
+  function arrayBuilder(count) {
+    // your code here...
+    var array = [];
+
+    for (var key in count) {
+      var number = count[key];
+
+      for (var i = 1; i <= number; i += 1) {
+        array.push(key);
+      }
+    }
+    return array;
+  }
+
+  //Comment in the code below to test your function:
+
+  console.log(arrayBuilder({ cats: 2, dogs: 1 })); //=> ['cats', 'cats', 'dogs']
+  console.log(arrayBuilder({})); //=> []
+}
