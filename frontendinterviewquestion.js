@@ -216,3 +216,6 @@ Solution: You can fix it by avoiding closure. Just create a IIFE (Immediately In
     setTimeout(console.log.bind(console, i), 10);
   }
 }
+//Question 14
+/* 14)Look at the code below, I have a property in a object and I am creating a new object where I am setting it to a new value. If I delete that property what will i get if I try to access that property?
+ */
