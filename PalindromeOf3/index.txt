@@ -1,0 +1,6 @@
+First, let’s create a function which will check if a number is palindrome.
+Convert the number to an array of characters. For example 999 will become: ["9", "9", "9"];
+Get the length of the array;
+Loop through half the elements from the array;
+If the i-th element is not equal t0 the len-1-i-th element (the last minus i-th element) it means that the number is not palindrome, so we return false. Else the loop continues until it terminates. Then we return true;
+Now that we have this function we can move on to the next step which is looping through all the pairs of 3 digit numbers, multiplying them and checking if the result is palindrome.
