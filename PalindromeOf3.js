@@ -1,20 +1,22 @@
+function isPalindrome(x){
+    x = x.toString().split('');
+    var len = x.length;
+    for(var i=0; i<len/2;i++){
+        if(x[i] !== x[len-1-i]){
+            return false;
+        }
+    }
+    return true;
+}
 function largestPalindrome(){
-
-    var arr = [];    
-    for(var i =999; i>100; i--){
-        for(var j = 999; j>100; j--){
-            var mul = j*i;
-            if(isPalin(mul)){
-                arr.push(j * i);
+    var largest = 0;
+    for(var i=999; i>=100; i--){
+        for(var j=999; j>=100; j--){
+            var mult = i*j;
+            if(isPalindrome(mult) && mult > largest){
+                largest = mult;
             }
         }
     }
-
-    return Math.max.apply(Math, arr);
+    return largest;
 }
-
-function isPalin(i){
-    return i.toString() == i.toString().split("").reverse().join("");
-}
-
-console.log(largestPalindrome());
